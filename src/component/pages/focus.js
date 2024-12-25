@@ -7,7 +7,7 @@ const Focus = () => {
 
         <>
 
-            <div class="bg-[#F7F8FF] mt-10 max-w-6xl relative w-full mx-auto sm:rounded-lg">
+            <div class="bg-[#FDFDFF] mt-10 max-w-6xl relative w-full mx-auto sm:rounded-lg border border-[#EFF1FE]">
                 <div class=" mx-auto py-8 sm:px-10 px-5 md:flex md:justify-center md:items-center">
                     <div class="md:w-1/2 lg:w-3/3 md:mr-8">
                         <h1 class="text-3xl font-bold mb-4 text-[#00213E]">Focus like there’s no tomorrow™
@@ -20,8 +20,8 @@ const Focus = () => {
                         <img src={Cover1} alt="Responsive Design" class="w-full h-full object-cover rounded-xl" />
                     </div>
                 </div>
-            </div >
-            <div class="bg-[#F7F8FF] mt-10 max-w-6xl relative w-full mx-auto sm:rounded-lg">
+            </div>
+            <div class="bg-[#FDFDFF] mt-10 max-w-6xl relative w-full mx-auto sm:rounded-lg border border-[#EFF1FE]">
                 <div className="max-w-6xl mx-auto py-8 px-4 md:px-0 md:flex md:justify-center md:items-center">
                     <div className="md:w-1/2 lg:w-3/3 mb-8  md:mt-2 sm:pl-5 sm:pt-6 ">
                         <img src={Cover2} alt="Responsive Design" className="w-full h-full object-cover rounded-xl" />
@@ -37,7 +37,7 @@ const Focus = () => {
                     </div>
                 </div>
             </div >
-            <div class="bg-[#F7F8FF] mt-10 max-w-6xl relative w-full mx-auto sm:rounded-lg">
+            <div class="bg-[#FDFDFF] mt-10 max-w-6xl relative w-full mx-auto sm:rounded-lg border border-[#EFF1FE]">
                 <div class="max-w-6xl mx-auto py-8 sm:px-10 px-5 md:flex md:justify-center md:items-center">
                     <div class="md:w-1/2 lg:w-3/3 md:mr-8">
                         <h1 class="text-3xl font-bold mb-4 text-[#00213E]">A Memory like you never had™

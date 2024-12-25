@@ -64,20 +64,20 @@ const Improvee = () => {
                     Improve your  professional, academic and personal life
                 </h2>
             </div >
-            <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-2 lg:grid-cols-3 pt-10 px-5">
+            <div className="mx-auto grid justify-center gap-5  sm:grid-cols-2 md:max-w-[64rem] sm:grid-cols-2 pt-10 ">
                 {cardData.map((card) => (
                     <div key={card.id} className="relative pl-16 mb-10 ">
                         <dt className="text-base font-semibold leading-7  text-[#00213E]">
-                            <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-[#2e2f68]">
+                            <div className="absolute left-0 top-0 flex h-16 w-16 items-center justify-center rounded-lg bg-[#2e2f68] ">
                                 <img
                                     src={card.image}
                                     alt={card.title}
-                                    className="h-8 w-8 object-contain"
+                                    className="h-12 w-12 object-contain"
                                 />
                             </div>
-                            {card.title}
+                            <h1 className="font-bold pl-10">{card.title}</h1>
                         </dt>
-                        <dd className="mt-2 text-base leading-7  text-slate-500">
+                        <dd className="pl-10 mt-2 text-base leading-7  text-slate-500">
                             {card.description}
                         </dd>
                     </div>

@@ -4,6 +4,7 @@ import metalogo from "../images/metalogo.svg";
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     // Track scrolling
     useEffect(() => {
@@ -23,7 +24,10 @@ const Header = () => {
 
     return (
         <div
-            className={`fixed top-0 py-2 w-full transition-all duration-300 ${scrolled ? "backdrop-blur-[20px] bg-[#FFF]/50 " : ""
+            className={`fixed top-0 py-2 w-full transition-all duration-300 
+            ${scrolled
+                    ? "backdrop-blur-[20px] bg-[#FFF]/50"
+                    : "backdrop-blur-[20px] bg-[#FFF]/50 md:backdrop-blur-0 md:bg-transparent"
                 }`}
             style={{ zIndex: 999 }}
         >
@@ -40,10 +44,10 @@ const Header = () => {
                     </NavLink>
                     <button
                         className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
-                        onClick={() => setScrolled(!scrolled)}
+                        onClick={() => setMenuOpen(!menuOpen)}
                     >
                         <svg fill="#2e2f68" viewBox="0 0 20 20" className="w-6 h-6">
-                            {!scrolled ? (
+                            {!menuOpen ? (
                                 <path
                                     fillRule="evenodd"
                                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
@@ -60,7 +64,7 @@ const Header = () => {
                     </button>
                 </div>
                 <nav
-                    className={`flex-col flex-grow pb-4 px-4 md:pb-0 ${scrolled ? "flex" : "hidden"
+                    className={`flex-col flex-grow pb-4 px-4 md:pb-0 ${menuOpen ? "flex" : "hidden"
                         } md:flex md:justify-end md:flex-row`}
                 >
                     <NavLink

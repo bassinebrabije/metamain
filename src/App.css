@@ -23,3 +23,45 @@ body {
 .swiper-pagination-bullet-active {
     background: #4991CC !important;
 }
+
+.dotted-background {
+  background: radial-gradient(circle, #e0f3ffc5 1px, transparent 1px);
+  background-size: 10px 10px; /* Adjust for larger or smaller dots */
+  z-index: 0;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.z-0 {
+  z-index: 0;
+}
