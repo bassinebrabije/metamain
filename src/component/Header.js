@@ -30,7 +30,7 @@ const Header = () => {
     return (
         <>
             <header
-                className={`fixed top-0  w-full transition-all duration-300  
+                className={`fixed top-0 w-full transition-all duration-300 py-3  sm:py-0  
                 ${scrolled
                         ? "backdrop-blur-[20px] bg-[#FFF]"
                         : menuOpen
@@ -70,7 +70,7 @@ const Header = () => {
                             className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
                             onClick={() => setMenuOpen(!menuOpen)}
                         >
-                            <svg fill="#C8C8C8" viewBox="0 0 20 20" className="w-6 h-6">
+                            <svg fill="#2e2f68" viewBox="0 0 20 20" className="w-6 h-6">
                                 {!menuOpen ? (
                                     <path
                                         fillRule="evenodd"
