@@ -95,7 +95,7 @@ const TestimonialSection = () => {
                 >
                     {testimonialData.map((item) => (
                         <SwiperSlide key={item.id}>
-                            <div className="bg-[#FDFDFF] p-8 rounded-xl hover:cursor-pointer border border-[#EFF1FE] shadow-ms hover:shadow-xl transition-shadow duration-300 mb-5">
+                            <div className="bg-[#FDFDFF] p-8 rounded-xl hover:cursor-pointer border border-[#EFF1FE] shadow-ms hover:shadow-xl transition-shadow duration-300 ">
                                 <div className="flex items-center gap-4 mb-6">
                                     <img
                                         src={item.avatar}
@@ -124,16 +124,15 @@ const TestimonialSection = () => {
                                         ))}
                                     </div>
                                 </div>
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="text-[#6b7280] leading-relaxed">
                                     {item.content}{" "}
                                     <button
-                                        className="text-[#47c6eb] text-xs underline"
+                                        className="text-[#4991cc] text-xs underline"
                                         onClick={() => openModal(item)}
                                     >
                                         Read More
                                     </button>
                                 </p>
-
                                 <img
                                     src={item.reviewsin}
                                     alt={item.title}

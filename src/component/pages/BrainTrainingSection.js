@@ -12,8 +12,7 @@ const BrainTrainingSection = () => {
                 }}
             >
                 {/* Black overlay with opacity */}
-                <div className="absolute inset-0 bg-black bg-opacity-75"></div>
-
+                <div className="absolute inset-0 bg-[#2e2f68] bg-opacity-75"></div>
                 <div className="container mx-auto relative z-10 py-10 text-center lg:py-20">
                     <div className="w-full px-4 lg:w-1/2 lg:px-0 mx-auto">
                         {/* Title Section */}

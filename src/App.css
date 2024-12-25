@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", serif;
+  font-family: "Poppins", serif;
 
 }
 
 
 .swiper-pagination-bullet {
-    background-color: #53617546 !important;
-    width: 16px !important;
-    height: 4px !important;
-    border-radius: 4px !important;
-    opacity: 1 !important;
+  background-color: #53617546 !important;
+  width: 16px !important;
+  height: 4px !important;
+  border-radius: 4px !important;
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
-    background: #4991CC !important;
+  background: #4991cc !important;
 }
 
 .dotted-background {
-  background: radial-gradient(circle, #e0f3ffc5 1px, transparent 1px);
-  background-size: 10px 10px; /* Adjust for larger or smaller dots */
+  background: radial-gradient(circle, #e0f3ff83 1px, transparent 1px);
+  background-size: 10px 10px;
+  /* Adjust for larger or smaller dots */
   z-index: 0;
 }
 

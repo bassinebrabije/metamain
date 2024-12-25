@@ -22,13 +22,17 @@ const Header = () => {
         };
     }, []);
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <div
-            className={`fixed top-0 py-2 w-full transition-all duration-300 
+            className={`fixed top-0 py-2 w-full transition-all duration-300  
             ${scrolled
-                    ? "backdrop-blur-[20px] bg-[#FFF]/50"
+                    ? "backdrop-blur-[20px] bg-[#FFF]  "
                     : menuOpen
-                        ? "backdrop-blur-[20px] bg-[#FFF]/50"
+                        ? "backdrop-blur-[20px] bg-[#FFF]/50 "
                         : "bg-transparent md:backdrop-blur-0"
                 }`}
             style={{ zIndex: 999 }}
@@ -41,6 +45,7 @@ const Header = () => {
                             className="mx-auto h-auto w-32"
                             alt="logo"
                             loading="lazy"
+                            onClick={closeMenu}
                             title="metalearninghub"
                         />
                     </NavLink>
@@ -48,7 +53,7 @@ const Header = () => {
                         className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
                         onClick={() => setMenuOpen(!menuOpen)}
                     >
-                        <svg fill="#2e2f68" viewBox="0 0 20 20" className="w-6 h-6">
+                        <svg fill="#C8C8C8" viewBox="0 0 20 20" className="w-6 h-6">
                             {!menuOpen ? (
                                 <path
                                     fillRule="evenodd"
@@ -72,8 +77,9 @@ const Header = () => {
                     <NavLink
                         to="/about"
                         end
+                        onClick={closeMenu}
                         className={({ isActive }) =>
-                            `px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-[#47c6eb] focus:shadow-outline ${isActive ? "text-[#47c6eb]" : "text-[#00213E]"
+                            `px-4 py-2 mt-2 text-sm font-normal rounded-lg md:mt-0 md:ml-4 hover:bg-[#4991cc]  hover:text-white focus:shadow-outline ${isActive ? "bg-[#4991cc]  text-white" : "text-[#1f2937]"
                             }`
                         }
                     >
@@ -82,8 +88,9 @@ const Header = () => {
                     <NavLink
                         to="/courses"
                         end
+                        onClick={closeMenu}
                         className={({ isActive }) =>
-                            `px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-[#47c6eb] focus:shadow-outline ${isActive ? "text-[#47c6eb]" : "text-[#00213E]"
+                            `px-4 py-2 mt-2 text-sm font-normal  rounded-lg md:mt-0 md:ml-4 hover:bg-[#4991cc]  hover:text-white focus:shadow-outline ${isActive ? "bg-[#4991cc]  text-white" : "text-[#1f2937]"
                             }`
                         }
                     >
@@ -92,8 +99,9 @@ const Header = () => {
                     <NavLink
                         to="/science"
                         end
+                        onClick={closeMenu}
                         className={({ isActive }) =>
-                            `px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-[#47c6eb] focus:shadow-outline ${isActive ? "text-[#47c6eb]" : "text-[#00213E]"
+                            `px-4 py-2 mt-2 text-sm  font-normal  rounded-lg md:mt-0 md:ml-4 hover:bg-[#4991cc]  hover:text-white focus:shadow-outline ${isActive ? "bg-[#4991cc]  text-white" : "text-[#1f2937]"
                             }`
                         }
                     >
@@ -102,8 +110,9 @@ const Header = () => {
                     <NavLink
                         to="/reviews"
                         end
+                        onClick={closeMenu}
                         className={({ isActive }) =>
-                            `px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-[#47c6eb] focus:shadow-outline ${isActive ? "text-[#47c6eb]" : "text-[#00213E]"
+                            `px-4 py-2 mt-2 text-sm  font-normal rounded-lg md:mt-0 md:ml-4 hover:bg-[#4991cc]  hover:text-white focus:shadow-outline ${isActive ? "bg-[#4991cc]  text-white" : "text-[#1f2937]"
                             }`
                         }
                     >

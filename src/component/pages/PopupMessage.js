@@ -53,12 +53,12 @@ const PopupMessage = () => {
                                 </svg>
                             </button>
                         </div>
-                        <p className="text-white text-base">
+                        <p className="text-white sm:text-base text-xs">
                             Unlock your potential . {" "}
                             <button
 
                                 style={{ textDecoration: "underline" }}
-                                className="text-white"
+                                className="text-white lowercase sm:text-base text-xs"
                             >
                                 {" "} BOOK YOUR MASTERCLASS TODAY!
                             </button>
