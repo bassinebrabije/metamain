@@ -22,14 +22,15 @@ const HeroSection = () => {
 
     /* if (isLoading) {
          return <LoadingScreen />;
-     } */
-
+     }
+ */
     return (
         <>
             <div className={`fixed dotted-background h-full top-0 left-0 right-0 z-[-99] hidden lg:block`}>
                 <div className="absolute left-0 right-0 bottom-0 h-[300px]"></div>
             </div>
             <section className="pt-[140px]">
+
                 <div className="absolute inset-0 h-[480px] opacity-60 bg-gradient-to-b from-[#e4e8ff] to-transparent hidden lg:block" />
                 <motion.div
                     className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center"
