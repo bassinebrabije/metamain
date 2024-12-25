@@ -38,7 +38,6 @@ const HeroSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-
                     <div className="mb-5 flex justify-center ">
                         <p className="relative rounded-full px-3 py-1  text-base leading-6">
                             <span className="relative text-[#4991cc]">Welcome to MetaLearning Hub </span>

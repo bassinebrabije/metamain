@@ -6,12 +6,22 @@ const BrainTrainingSection = () => {
     return (
         <section className="mt-12 lg:mt-24">
             <div
-                className="relative bg-cover bg-center text-white"
+                className="background-container relative bg-cover bg-center text-white"
                 style={{
-                    backgroundImage: `url(${GoogleMeet})`, // Using the imported image
-                    backgroundAttachment: "fixed", // Parallax effect
+                    backgroundImage: `url(${GoogleMeet})`, // Applying the background image inline
                 }}
             >
+                <style jsx>{`
+        .background-container {
+          background-attachment: fixed; /* Parallax effect for desktop/tablets */
+        }
+        @media (max-width: 768px) {
+          .background-container {
+            background-attachment: scroll; /* Remove parallax effect for phones */
+          }
+        }
+      `}</style>
+
                 {/* Black overlay with opacity */}
                 <div className="absolute inset-0 bg-[#4991cc] bg-opacity-75"></div>
                 <div className="container mx-auto relative z-10 py-10 text-center lg:py-20">
