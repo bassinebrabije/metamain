@@ -27,7 +27,9 @@ const Header = () => {
             className={`fixed top-0 py-2 w-full transition-all duration-300 
             ${scrolled
                     ? "backdrop-blur-[20px] bg-[#FFF]/50"
-                    : "backdrop-blur-[20px] bg-[#FFF]/50 md:backdrop-blur-0 md:bg-transparent"
+                    : menuOpen
+                        ? "backdrop-blur-[20px] bg-[#FFF]/50"
+                        : "bg-transparent md:backdrop-blur-0"
                 }`}
             style={{ zIndex: 999 }}
         >

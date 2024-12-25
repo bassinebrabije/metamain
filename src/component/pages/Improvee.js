@@ -64,7 +64,7 @@ const Improvee = () => {
                     Improve your  professional, academic and personal life
                 </h2>
             </div >
-            <div className="mx-auto grid justify-center gap-5  sm:grid-cols-2 md:max-w-[64rem] sm:grid-cols-2 pt-10 ">
+            <div className="mx-auto grid justify-center gap-5   md:max-w-[64rem] sm:grid-cols-2 pt-10 ">
                 {cardData.map((card) => (
                     <div key={card.id} className="relative pl-16 mb-10 ">
                         <dt className="text-base font-semibold leading-7  text-[#00213E]">

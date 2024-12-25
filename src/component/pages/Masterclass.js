@@ -27,7 +27,7 @@ const MasterclassSection = () => {
                                 BOOK YOUR MASTERCLASS
                             </button>
                         </aside>
-                        <aside className="relative flex items-center justify-center  hidden md:block">
+                        <aside className="relative  items-center justify-center  hidden md:flex">
                             <img
                                 className="w-4/4 h-auto rounded-xl"
                                 src={WorldImage}
