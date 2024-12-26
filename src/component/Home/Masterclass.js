@@ -5,22 +5,17 @@ import humanbrain from "../../images/home/human-brain-ouq.webp";
 const MasterclassSection = () => {
     return (
         <section
-            className="pt-14 aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-duration="2000"
+            className="pt-14"
         >
             <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 relative">
                 <motion.div
-                    className="shadow rounded-xl"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <div className="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-[#4991cc] rounded-xl">
+                    <div className="grid overflow-hidden text-white  md:grid-cols-2 bg-[#4991cc] rounded-xl">
                         {/* Left Image */}
-
-
                         {/* Right Content */}
                         <motion.aside
                             className="p-8 space-y-4 md:p-16"

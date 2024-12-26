@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from "react-helmet";
+
 import { motion } from 'framer-motion';
 import Programme from "./programme.js";
 import Testimonial from "./testimonial.js";
@@ -10,7 +12,7 @@ import MasterclassSection from "./Masterclass.js";
 
 import LoadingScreen from "./loading.js";
 
-const HeroSection = () => {
+const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -27,6 +29,18 @@ const HeroSection = () => {
  */
     return (
         <>
+            {/* Helmet for minimal SEO */}
+
+            <Helmet>
+                <title>Metalearning HUB - Professional Training and Coaching</title>
+                <meta
+                    name="description"
+                    content="Metalearning HUB est spécialisé dans le coaching cérébral pour aider les apprenants permanents et les décideurs à reprendre le contrôle de leur esprit, en améliorant les performances cognitives grâce à la concentration, la lecture rapide, la cartographie mentale, la mémoire, l'état d'esprit et les compétences de prise de décision."
+                />
+                <meta property="og:title" content="Metalearning HUB - Professional Training and Coaching" />
+                <meta property="og:description" content="MetaLearning HUB est spécialisé dans le coaching cérébral pour aider les apprenants permanents et les décideurs à reprendre le contrôle de leur esprit." />
+            </Helmet>
+            {/* Helmet for minimal SEO */}
             <div className={`fixed dotted-background h-full top-0 left-0 right-0 z-[-99] hidden lg:block`}>
                 <div className="absolute left-0 right-0 bottom-0 h-[300px]"></div>
             </div>
@@ -84,4 +98,4 @@ const HeroSection = () => {
     );
 };
 
-export default HeroSection;
+export default Home;
