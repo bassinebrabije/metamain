@@ -92,11 +92,19 @@ const Programme = () => {
                     </motion.div>
                 ))}
             </motion.div>
-            <div className="flex items-center justify-center px-6 pt-10 " >
+            <motion.div
+                className="flex items-center justify-center px-6 pt-10 "
+                initial={{ opacity: 0, y: 50 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 3, ease: "easeOut" }}
+            >
                 <button className="rounded-xl uppercase bg-[#4991cc] hover:bg-[#2e2f68] px-10 py-3 font-medium text-white transition-all duration-200 outline-none">
                     Book your masterclass
                 </button>
-            </div>
+            </motion.div>
+
+
+
         </section>
     );
 };
