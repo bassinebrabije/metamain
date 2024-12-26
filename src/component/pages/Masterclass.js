@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import WorldImage from "../../images/home/human-brain-ouq.webp"; // Update the path to your image file
+import humanbrain from "../../images/home/human-brain-ouq.webp";
 
 const MasterclassSection = () => {
     return (
@@ -54,8 +54,9 @@ const MasterclassSection = () => {
                         >
                             <img
                                 className="rounded-xl"
-                                src={WorldImage}
-                                alt="world"
+                                src={humanbrain}
+                                alt={humanbrain}
+                                loading="lazy"
                             />
                         </motion.aside>
                     </div>

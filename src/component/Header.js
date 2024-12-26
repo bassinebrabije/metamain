@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import metalogo from "../images/metalogo.svg";
-import { motion } from "framer-motion";
+
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -60,10 +60,10 @@ const Header = () => {
                             <img
                                 src={metalogo}
                                 className="mx-auto h-auto w-32"
-                                alt="logo"
+                                alt="Metalearning Hub logo"
                                 loading="lazy"
                                 onClick={closeMenu}
-                                title="metalearninghub"
+                                title="Metalearning Hub"
                             />
                         </NavLink>
                         <button

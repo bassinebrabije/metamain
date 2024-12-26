@@ -110,6 +110,7 @@ const Improvee = () => {
                                     src={card.image}
                                     alt={card.title}
                                     className="h-12 w-12 object-contain"
+                                    loading="lazy"
                                 />
                             </div>
                             <h1 className="font-bold pl-10">{card.title}</h1>

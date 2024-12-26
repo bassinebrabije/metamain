@@ -121,6 +121,7 @@ const TestimonialSection = () => {
                                         src={item.avatar}
                                         alt={item.name}
                                         className="w-16 h-16 rounded-full object-cover"
+                                        loading="lazy"
                                     />
                                     <div>
                                         <h3 className="font-semibold text-lg text-gray-900">

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Programme from "./programme.js";
 import Testimonial from "./testimonial.js";
 import Trusted from "./trusted.js";
 import Improve from "./Improvee.js";
@@ -73,6 +74,7 @@ const HeroSection = () => {
                 </motion.div>
             </section >
             <Trusted />
+            <Programme />
             <Improve />
             <Testimonial />
             <Focus />
