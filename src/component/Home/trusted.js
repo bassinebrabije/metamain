@@ -34,9 +34,8 @@ function Trusted() {
         visible: { opacity: 1, y: 0 },
     };
 
-
     return (
-        <div className="relative pt-20 pb-10 flex flex-col items-center">
+        <section className="relative pt-20 pb-10 flex flex-col items-center">
             <motion.p
                 className="text-center text-sm hidden text-[#6b7280] sm:mb-10 sm:block"
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -78,7 +77,7 @@ function Trusted() {
                     </motion.figure>
                 ))}
             </motion.div>
-        </div>
+        </section>
     );
 }
 

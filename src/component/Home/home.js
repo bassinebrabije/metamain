@@ -9,7 +9,8 @@ import Improve from "./Improvee.js";
 import Focus from "./focus.js";
 import BrainTrainingSection from "./BrainTrainingSection.js";
 import MasterclassSection from "./Masterclass.js";
-
+import CarousalSlide from "./carouselslider.js";
+import FAQ from "./faq.js";
 import LoadingScreen from "./loading.js";
 
 const Home = () => {
@@ -23,10 +24,10 @@ const Home = () => {
         return () => clearTimeout(timer);
     }, []);
 
-    /* if (isLoading) {
-         return <LoadingScreen />;
-     }
- */
+    //  if (isLoading) {
+    //      return <LoadingScreen />;
+    // }
+
     return (
         <>
             {/* Helmet for minimal SEO */}
@@ -93,7 +94,9 @@ const Home = () => {
             <Testimonial />
             <Focus />
             <BrainTrainingSection />
+            <CarousalSlide />
             <MasterclassSection />
+            <FAQ />
         </>
     );
 };

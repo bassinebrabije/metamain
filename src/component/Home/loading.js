@@ -32,15 +32,14 @@ const TypewriterLoader = () => {
         return () => clearTimeout(timeoutId);
     }, [currentText, isDeleting, currentWordIndex, hasFinished /* words is constant */]); // eslint-disable-line react-hooks/exhaustive-deps
 
-
     return (
         <>
-            <div class="bg-white fixed dotted-background h-full top-0 left-0 right-0 z-[999]  block">
-                <div class="absolute left-0 right-0 bottom-0 h-[300px]"></div>
+            <div className="bg-white fixed dotted-background h-full top-0 left-0 right-0 z-[999]  block">
+                <div className="absolute left-0 right-0 bottom-0 h-[300px]"></div>
             </div>
             <div className=" fixed top-0 left-0 w-full h-full flex justify-center items-center z-[9999]">
                 <div className="text-center">
-                    <h1 id="typewriter" className="text-2xl sm:text-6xl text-[#2e2f68] uppercase  leading-tight font-bold">
+                    <h1 id="typewriter" className="text-2xl sm:text-6xl text-[#2e2f68] uppercase  leading-tight font-bold ">
                         {currentText}
                     </h1>
                 </div>

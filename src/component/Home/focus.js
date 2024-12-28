@@ -11,7 +11,7 @@ const Focus = () => {
     };
 
     return (
-        <>
+        <section>
             <motion.div
                 className="bg-[#FDFDFF] mt-10 max-w-6xl relative w-full mx-auto sm:rounded-lg border border-[#EFF1FE]"
                 initial="hidden"
@@ -98,7 +98,7 @@ const Focus = () => {
                     </motion.div>
                 </div>
             </motion.div>
-        </>
+        </section>
     );
 };
 

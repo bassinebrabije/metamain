@@ -109,7 +109,7 @@ const TestimonialSection = () => {
                     {testimonialData.map((item) => (
                         <SwiperSlide key={item.id}>
                             <motion.div
-                                className="bg-[#FDFDFF] p-8 rounded-xl hover:cursor-pointer border border-[#EFF1FE] shadow-ms hover:shadow-xl transition-shadow duration-300"
+                                className="bg-[#FDFDFF] p-8 rounded-xl cursor-grabbing border border-[#EFF1FE] shadow-sm hover:shadow-xl transition-shadow duration-300"
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -124,7 +124,7 @@ const TestimonialSection = () => {
                                         loading="lazy"
                                     />
                                     <div>
-                                        <h3 className="font-semibold text-lg text-gray-900">
+                                        <h3 className="font-semibold text-lg text-[#00213E]">
                                             {item.name}
                                         </h3>
                                         <p className="text-slate-500 text-sm">{item.position}</p>
@@ -212,7 +212,6 @@ const TestimonialSection = () => {
                                 ))}
                             </div>
                         </div>
-
                         <p className="text-gray-600 leading-relaxed mb-4">
                             {modalContent.fullContent}
                         </p>
