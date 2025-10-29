@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import metalogo from "../images/metalogo.svg";
 
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
+
+    // Scroll to top when location changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
 
     // Track scrolling
     useEffect(() => {
@@ -91,6 +97,17 @@ const Header = () => {
                         className={`flex-col flex-grow pb-4 px-4 md:pb-0 ${menuOpen ? "flex" : "hidden"
                             } md:flex md:justify-end md:flex-row`}
                     >
+                        <NavLink
+                            to="/"
+                            end
+                            onClick={closeMenu}
+                            className={({ isActive }) =>
+                                `px-4 py-2 mt-2 text-sm font-normal rounded-lg md:mt-0 md:ml-4 hover:bg-[#4991cc]  hover:text-white focus:shadow-outline ${isActive ? "bg-[#4991cc]  text-white" : "text-[#1f2937]"
+                                }`
+                            }
+                        >
+                            Home
+                        </NavLink>
                         <NavLink
                             to="/about"
                             end

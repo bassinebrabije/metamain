@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import Cover1 from "../../images/about/mission1.png";
+import Cover1 from "../../images/about/ourmission.webp";
 export default function ourmission() {
     const fadeInUp = {
         hidden: { opacity: 0, y: 50 },

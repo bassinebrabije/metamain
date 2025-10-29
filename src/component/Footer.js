@@ -3,12 +3,8 @@ import metalogo from '../images/metalogo.svg';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-
     return (
         <>
-
-
-
             <footer className="mx-auto w-full pt-10 max-w-container px-4 sm:px-6 lg:px-8">
                 <div className="border-t border-slate-900/5 py-10">
                     <img

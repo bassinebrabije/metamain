@@ -11,22 +11,9 @@ import BrainTrainingSection from "./BrainTrainingSection.js";
 import MasterclassSection from "./Masterclass.js";
 import CarousalSlide from "./carouselslider.js";
 import FAQ from "./faq.js";
-import LoadingScreen from "./loading.js";
+
 
 const Home = () => {
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 5550);
-
-        return () => clearTimeout(timer);
-    }, []);
-
-    //  if (isLoading) {
-    //      return <LoadingScreen />;
-    // }
 
     return (
         <>
